@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plantae</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+			<script src="tabletop1.3.4.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "Plantae.css"/>
+
+	</head>
+	<body>
+		<!--file with js-->
+		<script type="text/javascript" src="Plantae15.js"></script>
+
+		<!--Home page-->
+		<div data-role = "page" id = "Home"><br>
+			<center><img src = header.png></center>
+
+			<div data-role = "content">
+				<center>
+				<ul>
+					<li><a href = "#Home" style="color: #fb3f00; text-decoration: none;">Home</a></li>  	
+					<li><a href = "#MyGardenPage" style="color: #fb3f00; text-decoration: none;">My Garden</a></li>
+				  	<li><a href = "#PlantDirectory" style="color: #fb3f00; text-decoration: none;">Plant Directory</a></li>
+				</ul><br>
+
+				<!-- The Image and Form Codes are Below --> 
+
+				<CENTER>
+				<IMG SRC="MyPlants.png" NAME="mypic" BORDER=0 HEIGHT="200" WIDTH="200">
+				<p>
+
+				<A HREF="JavaScript:slideshowUp(num)"> Start the Slideshow! </A> 
+
+
+
+			</div>
+
+		</div>
+		<!--my Garden page-->
+		<div data-role = "page" id = "MyGardenPage">
+			
+			<div data-role = "content">
+				<center><img src = header.png></center>
+			<center>
+				<ul>
+					<li><a href = "#Home" style="color: #fb3f00; text-decoration: none;">Home</a></li>  	
+					<li><a href = "#MyGardenPage" style="color: #fb3f00; text-decoration: none;">My Garden</a></li>
+				  	<li id = "Reset"><a href = "#PlantDirectory" style="color: #fb3f00; text-decoration: none;">Plant Directory</a></li>
+				</ul>
+			</center>
+			<br><br>				
+				<center>
+				<div id = "mygarden"><center>Add plants to your garden from the Plant Directory page!</center>
+
+					<dl>
+					</dl>
+				</div>
+			</center>
+				
+			</div>
+		</div>
+
+
+		<!--plant directory page-->
+		<div data-role = "page" id = "PlantDirectory">
+
+			<div data-role = "content">
+				<center><img src = header.png></center>
+				<center>
+					<!--menu list-->
+				<ul>
+					<li><a href = "#Home" style="color: #fb3f00; text-decoration: none;">Home</a></li>  	
+					<li><a href = "#MyGardenPage" style="color: #fb3f00; text-decoration: none;">My Garden</a></li>
+				  	<li id = "Reset"><a href = "#PlantDirectory" style="color: #fb3f00; text-decoration: none;">Plant Directory</a></li>
+				</ul>
+			</center>
+				
+				<div id = "target">
+					<center><ul id = "list">
+					
+					</ul> <center></div>
+
+				<br>
+			<div>
+				<center> <div id = "desc"> Hover over a plant name for more information!</div> <br><br>
+					<img src = "AddButton.png" id ="button" onclick = "myFunction()"><center>
+			</div>
+		</div>
+
+		
+	</body>
+</html>
